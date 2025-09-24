@@ -1,0 +1,275 @@
+/* Reset e base */
+body, h1, h2, h3, p, ul, li, input, button, textarea, label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #d8eef0;
+  color: #2d3e40;
+  min-height: 100vh;
+}
+
+header {
+  background: #d3e3e6;
+  padding: 24px 0 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 48px;
+  margin-left: 32px;
+}
+
+header nav {
+  margin-right: 32px;
+}
+
+header button, header a {
+  background: none;
+  border: none;
+  color: #3ca6b8;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-left: 16px;
+  transition: color 0.2s;
+}
+
+header button:hover, header a:hover {
+  color: #1e6d7b;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.equipamento-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 24px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  border: 1px solid #d3e3e6;
+  position: relative;
+}
+
+.equipamento-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f6fafd;
+  border: 1px solid #e3f3f5;
+}
+
+.equipamento-card .info {
+  flex: 1;
+}
+
+.equipamento-card h3 {
+  font-size: 1.3em;
+  color: #3ca6b8;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.equipamento-card p {
+  color: #4a5a5e;
+  margin-bottom: 12px;
+}
+
+.equipamento-card button, .equipamento-card .icon-btn {
+  background: #3ca6b8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  margin-right: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.equipamento-card button:last-child, .equipamento-card .btn-excluir {
+  background: #e74c3c;
+}
+
+.equipamento-card button:hover, .equipamento-card .icon-btn:hover {
+  background: #1e6d7b;
+}
+
+.equipamento-card button:last-child:hover, .equipamento-card .btn-excluir:hover {
+  background: #c0392b;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(44, 62, 80, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 36px;
+  min-width: 340px;
+  box-shadow: 0 4px 24px #0002;
+  position: relative;
+  text-align: left;
+}
+
+.modal-content h2 {
+  color: #3ca6b8;
+  margin-bottom: 18px;
+  font-size: 1.3em;
+}
+
+.modal-content input, .modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #d3e3e6;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #f6fafd;
+  resize: none;
+}
+
+.modal-content button {
+  background: #3ca6b8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background 0.2s;
+}
+
+.modal-content button:last-child {
+  background: #e74c3c;
+}
+
+.modal-content button:hover {
+  background: #1e6d7b;
+}
+
+.modal-content button:last-child:hover {
+  background: #c0392b;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  color: #3ca6b8;
+  cursor: pointer;
+}
+
+.modal-content .close:hover {
+  color: #e74c3c;
+}
+
+.comentario-card {
+  background: #f6fafd;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-left: 4px solid #3ca6b8;
+}
+
+.comentario-card strong {
+  color: #3ca6b8;
+}
+
+.comentario-card small {
+  color: #888;
+  margin-left: 8px;
+}
+
+.login-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 32px 36px;
+  max-width: 340px;
+  margin: 48px auto;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 24px auto;
+  height: 56px;
+}
+
+.password-display {
+  font-size: 1.5em;
+  letter-spacing: 8px;
+  margin-bottom: 18px;
+  color: #3ca6b8;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.keyboard .row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.keyboard button {
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.keyboard button:hover {
+  background: #bbb;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+
+button:focus, input:focus, textarea:focus {
+  outline: 2px solid #3ca6b8;
+  outline-offset: 2px;
+}
+
+.hidden { display: none !important; }
+.show { display: flex !important; }
+.error { color: #e74c3c; margin-top: 8px; }

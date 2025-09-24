@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Techman - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/auth.js"></script>
+</head>
+<body>
+  <div class="login-container">
+    <img src="/assets/logo.png" alt="Techman Logo" class="logo">
+
+    <div class="password-display" id="passwordDisplay"></div>
+
+    <div class="keyboard">
+      <div class="row">
+        <button class="key" data-num="1">1</button>
+        <button class="key" data-num="2">2</button>
+        <button class="key" data-num="3">3</button>
+      </div>
+      <div class="row">
+        <button class="key" data-num="4">4</button>
+        <button class="key" data-num="5">5</button>
+        <button class="key" data-num="6">6</button>
+      </div>
+      <div class="row">
+        <button class="key" data-num="7">7</button>
+        <button class="key" data-num="8">8</button>
+        <button class="key" data-num="9">9</button>
+      </div>
+      <div class="row">
+        <button id="clear">C</button>
+        <button class="key" data-num="0">0</button>
+        <button id="enter" disabled>⏎</button>
+      </div>
+    </div>
+
+    <p id="errorMsg" class="error"></p>
+  </div>
+</body>
+</html>

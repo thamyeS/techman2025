@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Techman</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="login-container">
+    <img src="/assets/logo.png" alt="Techman Logo" class="logo">
+    <nav>
+      <button id="new-equipment-btn">Novo Equipamento</button>
+      <button id="logout-btn">Sair</button>
+    </nav>
+  </header>
+  <main>
+    <div id="equipments-list"></div>
+
+
+<div id="modal-delete" class="modal">
+  <div class="modal-content">
+    <p>Deseja realmente excluir?</p>
+    <button id="confirm-delete">Sim</button>
+    <button id="cancel-delete">Não</button>
+  </div>
+</div>
+
+ <div id="modal-new-equipment" class="modal hidden">
+  <div class="modal-content">
+    <h2>Novo Equipamento</h2>
+    <input id="novo-nome" type="text" placeholder="Nome do equipamento"><br>
+    <input id="novo-descricao" type="text" placeholder="Descrição"><br>
+    <input id="novo-imagem" type="text" placeholder="Link da imagem (ex: https://... )"><br>
+    <button id="save-equipment">Salvar</button>
+    <button id="cancel-new-equipment">Cancelar</button>
+  </div>
+</div>
+  </div>
+  <div id="modal-novo-comentario" class="modal hidden">
+  <div class="modal-content">
+    <h2>Novo Comentário</h2>
+    <textarea id="comentario-texto" placeholder="Digite seu comentário"></textarea>
+    <div style="margin-top:10px;">
+      <button id="salvar-comentario">Salvar</button>
+      <button id="cancelar-comentario">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+  <script src="js/equipamentos.js"></script>
+</body>
+</html>
